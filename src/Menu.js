@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Menu.css'; // Import your CSS file for styling
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import tesseractImage from './static/Tesseract-1Kb.gif';
 
 const Menu = () => {
@@ -26,7 +27,8 @@ const Menu = () => {
           <a className="menu-item-index unique" href="#">Ivan Angulo <br/> Who Am I?</a>
         </li>
         <li className="menu-item ">
-          <a className="menu-item-index waviy" href="#">GitHub</a>
+          {/* Use Link component to navigate to /github-carousel route */}
+          <Link className="menu-item-index waviy" to="/github-carousel">GitHub Carousel</Link>
         </li>
         <li className="menu-item raise">
           <a className="menu-item-index raise" href="#" onClick = {() => openNewWindow('https://www.linkedin.com/in/ivan-angelo/')}>LinkedIn</a>
