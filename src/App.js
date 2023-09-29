@@ -14,7 +14,7 @@ function App() {
       <div className="App">
         {/* Define your routes inside the Routes component */}
         <Routes>
-          {/* Define the default route (home) */}
+          {/* Define the default route (home) as / */}
           <Route path="/" element={<Menu />} />
 
           {/* Route for the GitHubRepoSlide component */}

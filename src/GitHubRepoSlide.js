@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './GitHubRepoSlide.css'
+import { Link } from 'react-router-dom'; // Import Link
+import './GitHubRepoSlide.css';
+import pyramid from './static/pyramid-double.gif';
+// export default GitHubRepoSlide;
 
 const GitHubRepoSlide = ({ repoOwner, repoName }) => {
   const [repoData, setRepoData] = useState(null);
@@ -22,91 +25,43 @@ const GitHubRepoSlide = ({ repoOwner, repoName }) => {
   }, [repoOwner, repoName, isLoading]);
 
   return (
-    <div className="github-repo-slide">
-      {isLoading ? (
-        <p>Loading...</p>
-      ) : (
-        <>
-          <h2>{repoData?.name}</h2>
-          <p>{repoData?.description}</p>
-          <p>
-            <a href={repoData?.html_url} target="_blank" rel="noopener noreferrer">
-              View on GitHub
-            </a>
-          </p>
-          <p>Last Updated: {new Date(repoData?.updated_at).toLocaleDateString()}</p>
-          <p>Primary Language: {repoData?.language}</p>
-        </>
-      )}
+    <div>
+      <div className="github-repo-slide">
+        {isLoading ? (
+          <p>Loading...</p>
+        ) : (
+          <>
+            <h2>{repoData?.name}</h2>
+            <p>{repoData?.description}</p>
+            <p>
+              <a href={repoData?.html_url} target="_blank" rel="noopener noreferrer">
+                View on GitHub
+              </a>
+            </p>
+            <p>Last Updated: {new Date(repoData?.updated_at).toLocaleDateString()}</p>
+            <p>Primary Language: {repoData?.language}</p>
+          </>
+        )}
+      </div>
+      {/* Add a div for the "Go Back to Home" button */}
+      <div className="button-container">
+        {/* Add a className to the link for styling */}
+        <Link to="/" className="home-link-button">
+          <div className="button-content"> {/* Add a class for styling */}
+            <img src={pyramid} alt="Pyramid" />
+            <span>Go Back to Home</span>
+          </div>
+        </Link>
+      </div>
     </div>
   );
-};
-
+        };
+  
 export default GitHubRepoSlide;
 
 
 
-//GitHubRepoSlide.js
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*import React from 'react';
-import { v4 as uuidv4 } from 'uuid';
-
-// Define the Card component here or import it from the appropriate file
-const Card = ({ imagen }) => (
-  <div className="card">
-    <img src={imagen} alt="Card" />
-  </div>
-);
-
-// Define the Carousel component here or import it from the appropriate file
-const Carousel = ({ cards }) => (
-  <div className="carousel">
-    {cards.map((card) => (
-      <Card key={card.key} imagen={card.content.props.imagen} />
-    ))}
-  </div>
-);
-
-function GitHubCarousel() {
-  let cards = [
-    // ... the cards array from your example ...
-  ];
-
-  return (
-    <div className="GitHubCarousel">
-      <Carousel cards={cards} />
-    </div>
-  );
-}
-
-export default GitHubCarousel;
-
-*/
 
 
 

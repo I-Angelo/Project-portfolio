@@ -1,11 +1,19 @@
-/* Add styles for the container of the GitHub repository slide */
-.github-repo-slide {
+/* Style for the outer container */
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Vertically center within the viewport */
+  }
+  
+  /* Style for the GitHub repository slide */
+  .github-repo-slide {
     background-color: #f5f5f5; /* Background color */
     border: 1px solid #ddd; /* Border */
     padding: 20px; /* Spacing inside the slide */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a slight elevation */
     max-width: 400px; /* Maximum width of the slide */
-    margin: 0 auto; /* Center the slide horizontally */
+    text-align: center; /* Center-align content */
   }
   
   /* Style for the repository name */
@@ -31,10 +39,24 @@
     font-weight: bold; /* Make the link bold */
   }
   
-  /* Center align text within the slide */
-  .github-repo-slide p,
-  .github-repo-slide a {
-    text-align: center;
+  /* Style for the button container */
+  .button-container {
+    margin-top: 50px; /* Add spacing between the slide and the button */
+    text-align: center; /* Center-align content */
+  }
+  
+  /* Style for the button link */
+  .home-link-button {
+    text-decoration: none; /* Remove underlines */
+    color: #2678d6; /* Link color */
+  }
+  
+  /* Style for the button image */
+  .home-link-button img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing below the image */
+    margin: 0 auto; /* Center-align the image horizontally */
   }
   
   /* Additional styling can be added as needed */
