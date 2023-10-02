@@ -1,6 +1,8 @@
 /* Custom styles for the GitHubRepoCarousel */
 .github-repo-slide {
-  background-color: #f5f5f5;
+  /* background-color: #2e8aa3; */
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(58,58,125,0.7861519607843137) 16%, rgba(0,140,255,0.9206057422969187) 44%);
   border: 1px solid #ddd;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -20,8 +22,9 @@
 }
 
 .github-repo-slide a {
-  color: #0366d6;
+  color: #617c9a; /* View On Github color*/
   text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a strong shadow */
 }
 
 .github-repo-slide a.view-on-github {
