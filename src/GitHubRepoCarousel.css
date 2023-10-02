@@ -1,0 +1,68 @@
+/* Custom styles for the GitHubRepoCarousel */
+.github-repo-slide {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 300px; /* Reduced maximum width */
+  margin: 0 auto;
+}
+
+.github-repo-slide {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%; /* Add this line to ensure slides are not too wide */
+  margin: 0 auto;
+}
+
+.github-repo-slide h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.github-repo-slide p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.github-repo-slide a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.github-repo-slide a.view-on-github {
+  font-weight: bold;
+}
+
+.github-repo-slide p,
+.github-repo-slide a {
+  text-align: center;
+}
+
+/* Style for the button container */
+.button-container {
+  margin-top: 50px; /* Add spacing between the slide and the button */
+  text-align: center; /* Center-align content */
+}
+
+/* Style for the button link */
+.home-link-button {
+  text-decoration: none; /* Remove underlines */
+  color: #2678d6; /* Link color */
+}
+
+/* Style for the button image */
+.home-link-button img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra spacing below the image */
+  margin: 0 auto; /* Center-align the image horizontally */
+}
+
+.slick-slider{
+  width: 450px;
+  height: 200px;
+}

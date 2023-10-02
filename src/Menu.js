@@ -14,6 +14,86 @@ const Menu = () => {
     // Open a new window or tab with the specified URL
     window.open(url, '_blank');
   };
+
+  return (
+    <nav className={`menu ${menuOpen ? 'open' : ''}`}>
+      <input
+        type="checkbox"
+        id="menu-toggler"
+        className="menu-toggler"
+        checked={menuOpen}
+        onChange={toggleMenu}
+      />
+      <div className={`tesseract-image ${menuOpen ? 'open' : ''}`}>
+        <img src={tesseractImage} alt="Tesseract" />
+      </div>
+      <ul>
+        <li className="menu-item ">
+          <a className="menu-item-index unique" href="#">
+            Ivan Angulo <br /> Who Am I?
+          </a>
+        </li>
+        <li className="menu-item">
+          {/* Use Link component to navigate to /github-carousel route */}
+          <Link className="menu-item-index waviy" to="/github-carousel/I-Angelo">
+            GitHub Carousel
+          </Link>
+        </li>
+        <li className="menu-item raise">
+          <a
+            className="menu-item-index raise"
+            href="#"
+            onClick={() => openNewWindow('https://www.linkedin.com/in/ivan-angelo/')}
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li className="menu-item">
+          <a className="menu-item-index" href="#">
+            Projects
+          </a>
+        </li>
+        <li className="menu-item">
+          <a className="menu-item-index" href="#">
+            Contact Me
+          </a>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Menu;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import React, { useState } from 'react';
+import './Menu.css'; // Import your CSS file for styling
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import tesseractImage from './static/Tesseract-1Kb.gif';
+
+const Menu = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const openNewWindow = (url) => {
+    // Open a new window or tab with the specified URL
+    window.open(url, '_blank');
+  };
   return (
     <nav className={`menu ${menuOpen ? 'open' : ''}`}>
       <input
@@ -21,15 +101,22 @@ const Menu = () => {
      <div className={`tesseract-image ${menuOpen ? 'open' : ''}`}>
         <img src={tesseractImage} alt="Tesseract" />
       </div>
-      {/* <label htmlFor="menu-toggler"></label> */}
-      <ul>
+
+      /*{/* <label htmlFor="menu-toggler"></label> *//*}
+  
+  
+  /*<ul>
         <li className="menu-item ">
           <a className="menu-item-index unique" href="#">Ivan Angulo <br/> Who Am I?</a>
         </li>
         <li className="menu-item ">
-          {/* Use Link component to navigate to /github-carousel route */}
-          <Link className="menu-item-index waviy" to="/github-carousel">GitHub Carousel</Link>
-        </li>
+          {/* Use Link component to navigate to /github-carousel route *//*}
+         
+         
+         /* <Link className="menu-item-index waviy" to="/github-carousel">GitHub Carousel</Link>
+    
+    
+    /*      </li>
         <li className="menu-item raise">
           <a className="menu-item-index raise" href="#" onClick = {() => openNewWindow('https://www.linkedin.com/in/ivan-angelo/')}>LinkedIn</a>
         </li>
@@ -41,8 +128,10 @@ const Menu = () => {
         </li>
         {/* <li className="menu-item">
           <a className="fas fa-glass-cheers" href="#">6</a>
-        </li> */}
-      </ul>
+        </li> *//*} 
+      
+      
+      /*  </ul>
     </nav>
   );
 };
