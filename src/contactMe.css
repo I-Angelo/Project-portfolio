@@ -56,7 +56,7 @@
     width: 200px; /* Set the width to 200px */
     height: 200px; /* Set the height to 200px */
     border-radius: 50%; /* Create a circular shape */
-    overflow: hidden; /* Hide any overflowing content */
+    /*overflow: hidden; /* Hide any overflowing content */
     margin-top: 25px; /* Add spacing between the slide and the button */
     text-align: center; /* Center-align content */
     /* padding-top: 25px; */

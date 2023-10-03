@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import { createRoot } from 'react-dom/client';
  // Import createRoot
 import './index.css'; // Import your global CSS file if needed

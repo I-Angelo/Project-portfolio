@@ -1,66 +1,81 @@
-/* Add your styles here */
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #132069;
-  } */
-  
-  /* aboutMe.css */
+/* aboutMe.css */
 
-  .about-me-container {
+.about-me-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 50vh; /* Adjust the desired height as needed */
-    /* background-color: #266a9e; */
+    min-height: 100vh;
   }
   
   .about-me-content {
     padding: 20px;
+    /* padding-top: 350px !important; */
+    margin-top: 375px !important;;
     text-align: center;
-    max-width: 600px; /* Adjust the maximum width as needed */
+    max-width: 600px;
     background-color: #266a9e;
-    text-align: justify; /* Justify the text alignment */
-    text-align-last: left; /* Set the alignment of the last line to left (squared) */
-
+    text-align: justify;
+    text-align-last: left;
+    white-space: normal; /* Allow text to wrap */
   }
-
+  
   .button-container {
-    margin-top: 35px; /* Add spacing between the slide and the button */
-    text-align: center; /* Center-align content */
-    /* padding-top: 80px; */
+    margin-top: 35px;
+    text-align: center;
     background-color: transparent;
   }
   
   /* Style for the button link */
   .home-link-button {
-    text-decoration: none; /* Remove underlines */
-    color: #2678d6; /* Link color */
+    text-decoration: none;
+    color: #2678d6;
   }
   
   /* Style for the button image */
   .home-link-button img {
-    width: 100px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any extra spacing below the image */
-    margin: 0 auto; /* Center-align the image horizontally */
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
-
+  
   /* Picture */
   .Profile-pic {
-    width: 200px; /* Set the width to 200px */
-    height: 200px; /* Set the height to 200px */
-    border-radius: 50%; /* Create a circular shape */
-    overflow: hidden; /* Hide any overflowing content */
-    margin-top: 25px; /* Add spacing between the slide and the button */
-    text-align: center; /* Center-align content */
-    /* padding-top: 25px; */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    margin-top: 25px;
+    text-align: center;
     background-color: transparent;
   }
   
   .selfie {
-    width: 100%; /* Ensure the image takes up the entire container */
-    height: auto; /* Maintain the aspect ratio */
-    display: block; /* Remove any extra spacing below the image */
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Mobile-specific styles */
+  @media (max-width: 768px),(max-height: 800px) {
+    .about-me-content {
+      font-size: 16px;
+      padding: 10px; /* Reduce padding for smaller screens */
+      text-align: center; /* Center-align text for smaller screens */
+    }
+  
+    .button-container {
+      margin-top: 20px; /* Adjust spacing between the slide and the button */
+    }
+  
+    .Profile-pic {
+      width: 150px; /* Reduce the width for smaller screens */
+      height: 150px; /* Reduce the height for smaller screens */
+    }
+  }
+
+  h1 {
+    /* padding-top: 350px; */
   }
   

@@ -42,7 +42,7 @@ const Menu = () => {
         <li className="menu-item raise">
           <a
             className="menu-item-index raise"
-            href="#"
+            // href="#"
             onClick={() => openNewWindow('https://www.linkedin.com/in/ivan-angelo/')}
           >
             LinkedIn
