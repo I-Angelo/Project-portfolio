@@ -29,9 +29,9 @@ const Menu = () => {
       </div>
       <ul>
         <li className="menu-item ">
-          <a className="menu-item-index unique" href="#">
-            Ivan Angulo <br /> Who Am I?
-          </a>
+          <Link className="menu-item-index unique" to="/about">
+          About Me
+          </Link>
         </li>
         <li className="menu-item">
           {/* Use Link component to navigate to /github-carousel route */}
@@ -53,11 +53,11 @@ const Menu = () => {
             Projects
           </a>
         </li>
-        <li className="menu-item">
-          <a className="menu-item-index" href="#">
-            Contact Me
-          </a>
-        </li>
+        <li className="menu-item ">
+          <Link className="menu-item-index unique" to="/contact">
+          Contact Me
+          </Link>
+          </li>
       </ul>
     </nav>
   );

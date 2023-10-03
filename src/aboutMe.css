@@ -1,0 +1,66 @@
+/* Add your styles here */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #132069;
+  } */
+  
+  /* aboutMe.css */
+
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Adjust the desired height as needed */
+    /* background-color: #266a9e; */
+  }
+  
+  .about-me-content {
+    padding: 20px;
+    text-align: center;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    background-color: #266a9e;
+    text-align: justify; /* Justify the text alignment */
+    text-align-last: left; /* Set the alignment of the last line to left (squared) */
+
+  }
+
+  .button-container {
+    margin-top: 35px; /* Add spacing between the slide and the button */
+    text-align: center; /* Center-align content */
+    /* padding-top: 80px; */
+    background-color: transparent;
+  }
+  
+  /* Style for the button link */
+  .home-link-button {
+    text-decoration: none; /* Remove underlines */
+    color: #2678d6; /* Link color */
+  }
+  
+  /* Style for the button image */
+  .home-link-button img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing below the image */
+    margin: 0 auto; /* Center-align the image horizontally */
+  }
+
+  /* Picture */
+  .Profile-pic {
+    width: 200px; /* Set the width to 200px */
+    height: 200px; /* Set the height to 200px */
+    border-radius: 50%; /* Create a circular shape */
+    overflow: hidden; /* Hide any overflowing content */
+    margin-top: 25px; /* Add spacing between the slide and the button */
+    text-align: center; /* Center-align content */
+    /* padding-top: 25px; */
+    background-color: transparent;
+  }
+  
+  .selfie {
+    width: 100%; /* Ensure the image takes up the entire container */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any extra spacing below the image */
+  }
+  

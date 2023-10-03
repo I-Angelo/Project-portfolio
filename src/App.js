@@ -4,6 +4,8 @@ import Menu from './Menu'; // Import your Menu component
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GitHubRepoCarousel from './GitHubRepoCarousel'; // Import your GitHubRepoCarousel component
 import ErrorBoundary from './ErrorBoundary'; // Import the ErrorBoundary component
+import AboutMe from './aboutMe';
+import ContactMe from './contactMe'
 
 function App() {
   return (
@@ -18,7 +20,12 @@ function App() {
 
             {/* Route for the GitHubRepoCarousel component with a dynamic parameter */}
             <Route path="/github-carousel/:repoOwner" element={<GitHubRepoCarousel />} />
+            
+            {/* Route for About Me */}
+            <Route path="/about" element={<AboutMe />} />
 
+            {/* Route for About Me */}
+            <Route path="/contact" element={<ContactMe />} />
 
             {/* Add more routes as needed */}
           </Routes>
