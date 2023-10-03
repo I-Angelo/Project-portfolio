@@ -274,3 +274,49 @@ a {
     --hover: #{adjust-hue($color, 45deg)};
 }
 } */
+
+@media (max-width: 768px) {
+    /* Styles for smaller screens (e.g., mobile devices) */
+    .menu-toggler {
+      width: 30px; /* Reduce the width for the menu-toggler */
+      height: 30px; /* Reduce the height for the menu-toggler */
+    }
+  
+    .menu-toggler:checked ~ ul .menu-item {
+      width: 150px; /* Reduce the width of menu items */
+      height: 150px; /* Reduce the height of menu items */
+      /* Adjust other properties as needed */
+    }
+  
+    .menu-item a.menu-item-index {
+      width: 125px; /* Reduce the width of menu item circles */
+      height: 125px; /* Reduce the height of menu item circles */
+      font-size: 16px; /* Reduce the font size for menu item text */
+      /* Adjust other properties as needed */
+    }
+    .menu-toggler:checked ~ ul .menu-item:nth-child(1) {
+        transform: rotate(0deg) translateY(-140px) translateX(0);
+    }
+    
+    .menu-toggler:checked ~ ul .menu-item:nth-child(2) {
+        transform: rotate(72deg) translateY(-140px) translateX(0);
+    }
+    
+    .menu-toggler:checked ~ ul .menu-item:nth-child(3) {
+        transform: rotate(144deg) translateY(-140px) translateX(0);
+    }
+    
+    .menu-toggler:checked ~ ul .menu-item:nth-child(4) {
+        transform: rotate(216deg) translateY(-140px) translateX(0);
+    }
+    
+    .menu-toggler:checked ~ ul .menu-item:nth-child(5) {
+        transform: rotate(288deg) translateY(-140px) translateX(0);
+    }
+    
+    .menu-toggler:checked ~ ul .menu-item a {
+        pointer-events: auto;
+    }
+  
+    /* Add more styles as needed for other elements */
+  }
