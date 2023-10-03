@@ -49,7 +49,7 @@ const GitHubRepoCarousel = () => {
   };
 
   return (
-    <div>
+    <div className="mobile-view">
       <Slider
         {...carouselSettings}
         style={{
