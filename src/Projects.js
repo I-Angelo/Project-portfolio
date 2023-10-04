@@ -5,10 +5,10 @@ import pyramid from './static/pyramid-double.gif';
 
 
 const subsectionsData = [
-  { title: 'Main Section 1', link: 'https://twisty-congruous-trouble.glitch.me' },
-  { title: 'Main Section 2', link: 'https://final-testing-recipe.web.app/' },
-  { title: 'Main Section 3', link: 'https://nettle-remarkable-jumpsuit.glitch.me' },
-  { title: 'Main Section 4', link: 'https://jazzy-foregoing-planet.glitch.me' },
+  { title: 'Whiskey!', link: 'https://twisty-congruous-trouble.glitch.me' },
+  { title: 'React - Cooking and Recipes App', link: 'https://final-testing-recipe.web.app/' },
+  { title: 'Phonebook', link: 'https://nettle-remarkable-jumpsuit.glitch.me' },
+  { title: 'Flask - Recipes', link: 'https://jazzy-foregoing-planet.glitch.me' },
 ];
 
 function Projects() {
