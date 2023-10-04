@@ -8,7 +8,11 @@ import './aboutMe.css';
 
 function AboutMe() {
   return (
+    <div>
     <div className="about-me-container">
+        {/* <div className='title'>
+            <h1>About Me</h1>
+        </div> */}
       {/* Content */}
       <div className="about-me-content">
         <h1>About Me</h1>
@@ -34,6 +38,7 @@ With my transition into software engineering, I am excited to embark on this new
           <span>Go Back to Home</span>
         </div>
       </Link>
+    </div>
     </div>
     </div>
   );

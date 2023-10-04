@@ -14,8 +14,10 @@ const subsectionsData = [
 function Projects() {
     return (
       <div>
-        <div>
-            <h1>Projects completed and in development</h1>
+        <div className='title'>
+            <h1>Projects completed</h1>
+            <h1>and</h1>
+            <h1>in development</h1>
         </div>
         <div className="Projects background-fade">
           <div className="grid-container">

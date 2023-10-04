@@ -58,6 +58,7 @@
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 50%;
   }
   
   /* Mobile-specific styles */
@@ -66,19 +67,18 @@
       font-size: 16px;
       padding: 10px; /* Reduce padding for smaller screens */
       text-align: center; /* Center-align text for smaller screens */
+      padding-top: 75px;
     }
   
     .button-container {
       margin-top: 20px; /* Adjust spacing between the slide and the button */
     }
   
-    .Profile-pic {
+    .Profile-pic.profile {
       width: 150px; /* Reduce the width for smaller screens */
       height: 150px; /* Reduce the height for smaller screens */
     }
   }
 
-  h1 {
-    /* padding-top: 350px; */
-  }
+
   
