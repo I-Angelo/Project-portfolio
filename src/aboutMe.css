@@ -68,7 +68,11 @@
       font-size: 16px;
       padding: 10px; /* Reduce padding for smaller screens */
       text-align: center; /* Center-align text for smaller screens */
-      padding-top: 75px;
+      /* margin-top: 500px; */
+    }
+
+    .about-me-container {
+        margin-top: 200px;
     }
   
     .button-container {
