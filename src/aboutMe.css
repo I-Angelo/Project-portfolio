@@ -27,6 +27,7 @@
     margin-top: 35px;
     text-align: center;
     background-color: transparent;
+    margin-bottom: 75px;
   }
   
   /* Style for the button link */
@@ -71,7 +72,8 @@
     }
   
     .button-container {
-      margin-top: 20px; /* Adjust spacing between the slide and the button */
+       margin-top: 20px; /* Adjust spacing between the slide and the button */
+       margin-bottom: 75px;
     }
   
     .Profile-pic.profile {
