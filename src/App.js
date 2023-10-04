@@ -6,6 +6,7 @@ import GitHubRepoCarousel from './GitHubRepoCarousel'; // Import your GitHubRepo
 import ErrorBoundary from './ErrorBoundary'; // Import the ErrorBoundary component
 import AboutMe from './aboutMe';
 import ContactMe from './contactMe'
+import Projects from './Projects'
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
 
             {/* Route for About Me */}
             <Route path="/contact" element={<ContactMe />} />
+
+            {/* Route for About Me */}
+            <Route path="/projects" element={<Projects />} />
 
             {/* Add more routes as needed */}
           </Routes>

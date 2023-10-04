@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Link, useParams } from 'react-router-dom';
 import './GitHubRepoCarousel.css';
-import pyramid from './static/pyramid-double.gif';
+import hurricane from './static/hurricane.gif';
 import GITHUB_API_TOKEN from './config/config.js';
 
 console.log("GitHub API Token:", GITHUB_API_TOKEN);
@@ -49,6 +49,7 @@ const GitHubRepoCarousel = () => {
   };
 
   return (
+    <div>
     <div className="mobile-view">
       <Slider
         {...carouselSettings}
@@ -75,11 +76,11 @@ const GitHubRepoCarousel = () => {
           ))
         )}
       </Slider>
-
-      <div className="button-container">
+    </div>
+    <div className="button-container">
         <Link to="/" className="home-link-button">
           <div className="button-content">
-            <img src={pyramid} alt="Pyramid" className="button-image" />
+            <img src={hurricane} alt="Pyramid" className="button-image" />
             <span>Go Back to Home</span>
           </div>
         </Link>

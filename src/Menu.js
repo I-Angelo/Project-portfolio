@@ -42,16 +42,16 @@ const Menu = () => {
         <li className="menu-item raise">
           <a
             className="menu-item-index raise"
-            // href="#"
-            onClick={() => openNewWindow('https://www.linkedin.com/in/ivan-angelo/')}
-          >
+            href="#"
+            onClick={() => openNewWindow('https://www.linkedin.com/in/ivan-angelo/')}>
             LinkedIn
           </a>
         </li>
         <li className="menu-item">
-          <a className="menu-item-index" href="#">
+          {/* Use Link component to navigate to /github-carousel route */}
+          <Link className="menu-item-index waviy" to="/projects">
             Projects
-          </a>
+          </Link>
         </li>
         <li className="menu-item ">
           <Link className="menu-item-index unique" to="/contact">

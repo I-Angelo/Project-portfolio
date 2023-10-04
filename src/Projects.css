@@ -1,0 +1,95 @@
+/* projects.css or your custom CSS file for 'projects.js' */
+
+/* Style for the entire projects container */
+.Projects {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Set your desired background color */
+    padding: 20px;
+    border-radius: 15px;
+    position: relative; /* Add relative positioning */
+    background: linear-gradient(to bottom, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 1) 100%);
+  }
+
+  /* Background style with fading effect */
+/* .background-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 1) 100%);
+  } */
+  
+  /* Style for the grid container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create a 2x2 grid */
+    gap: 25px; /* Add a 25px gap between grid items */
+  }
+  
+  /* Style for each subsection */
+  .project-subsection {
+    background-color: #e0e0e0; /* Set the background color for subsections */
+    border-radius: 4px; /* Add rounded corners */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  }
+  
+  /* Style for the subsection title */
+  .project-subsection h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  /* Style for the link */
+  .project-subsection a {
+    color: #0073e6; /* Set link color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hover effect for the link */
+  .project-subsection a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .button-container {
+    margin-top: 50px; /* Add spacing between the slide and the button */
+    text-align: center; /* Center-align content */
+  }
+  
+  /* Style for the button link */
+  .home-link-button {
+    text-decoration: none; /* Remove underlines */
+    color: #2678d6; /* Link color */
+  }
+  
+  /* Style for the button image */
+  .home-link-button img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing below the image */
+    margin: 0 auto; /* Center-align the image horizontally */
+  }
+
+  h1 {
+    padding: 30px;
+  }
+
+  /* Assign different background colors to each sub div */
+.project-subsection:nth-child(1) {
+    background-color: #485BFF; /* Red */
+  }
+  
+  .project-subsection:nth-child(2) {
+    background-color: #72CDAB; /* Green */
+  }
+  
+  .project-subsection:nth-child(3) {
+    background-color: #60BEFF; /* Blue */
+  }
+  
+  .project-subsection:nth-child(4) {
+    background-color: #FFCC35; /* Yellow */
+  }
