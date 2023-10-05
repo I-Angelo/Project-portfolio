@@ -1,12 +1,14 @@
 import React from 'react';
+// import { CSSTransition, TransitionGroup } from "react-transition-group";
 import './App.css';
-import Menu from './Menu'; // Import your Menu component
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import GitHubRepoCarousel from './GitHubRepoCarousel'; // Import your GitHubRepoCarousel component
+//import Menu from './Menu'; // Import your Menu component
+import { BrowserRouter as Router } from 'react-router-dom';
+//import GitHubRepoCarousel from './GitHubRepoCarousel'; // Import your GitHubRepoCarousel component
 import ErrorBoundary from './ErrorBoundary'; // Import the ErrorBoundary component
-import AboutMe from './aboutMe';
-import ContactMe from './contactMe'
-import Projects from './Projects'
+// import AboutMe from './aboutMe';
+// import ContactMe from './contactMe'
+// import Projects from './Projects';
+import AnimatedRoutes from './AnimatedRoutes';
 
 function App() {
   return (
@@ -14,25 +16,36 @@ function App() {
       <div className="App">
         {/* Wrap your routes in the ErrorBoundary component */}
         <ErrorBoundary>
+
+
+
+          <AnimatedRoutes />
+
+
+
+
+
+
+          {/*  */}
           {/* Define your routes inside the Routes component */}
-          <Routes>
+          {/* <Routes> */}
             {/* Define the default route (home) */}
-            <Route path="/" element={<Menu />} />
+            {/* <Route path="/" element={<Menu />} /> */}
 
             {/* Route for the GitHubRepoCarousel component with a dynamic parameter */}
-            <Route path="/github-carousel/:repoOwner" element={<GitHubRepoCarousel />} />
+            {/* <Route path="/github-carousel/:repoOwner" element={<GitHubRepoCarousel />} /> */}
             
             {/* Route for About Me */}
-            <Route path="/about" element={<AboutMe />} />
+            {/* <Route path="/about" element={<AboutMe />} /> */}
 
             {/* Route for About Me */}
-            <Route path="/contact" element={<ContactMe />} />
+            {/* <Route path="/contact" element={<ContactMe />} /> */}
 
             {/* Route for About Me */}
-            <Route path="/projects" element={<Projects />} />
-
+            {/* <Route path="/projects" element={<Projects />} /> */}
+         
             {/* Add more routes as needed */}
-          </Routes>
+          {/* </Routes> */}
         </ErrorBoundary>
       </div>
     </Router>

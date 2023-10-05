@@ -7,6 +7,7 @@ import { Link, useParams } from 'react-router-dom';
 import './GitHubRepoCarousel.css';
 import hurricane from './static/hurricane.gif';
 import GITHUB_API_TOKEN from './config/config.js';
+import { motion } from 'framer-motion';
 
 console.log("GitHub API Token:", GITHUB_API_TOKEN);
 
@@ -15,6 +16,10 @@ const GitHubRepoCarousel = () => {
 
   const [repoData, setRepoData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+
+  const exitAnimation = { opacity: 0, transition: { duration: 1, delay: 0 } };
+    // const animation = {opacity: 1};
+    const enterAnimation = { opacity: 1, transition: { duration: 1.5, delay: 2 } };
 
   useEffect(() => {
     axios
@@ -49,7 +54,8 @@ const GitHubRepoCarousel = () => {
   };
 
   return (
-    <div>
+    <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}
+    >
     <div className="mobile-view">
       <Slider
         {...carouselSettings}
@@ -85,7 +91,7 @@ const GitHubRepoCarousel = () => {
           </div>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
