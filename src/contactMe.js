@@ -29,7 +29,7 @@ function ContactMe() {
                 <label htmlFor="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
 
-                <button type="submit" >Submit</button>
+                <button type="submit square-button">Submit</button>
             </form>
         </div>
       <div className="button-container">

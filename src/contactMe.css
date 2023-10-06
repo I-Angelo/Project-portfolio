@@ -94,7 +94,7 @@ h1, .contact-form{
   }
 
 
-  .square-button {
+  .square-button, button {
     width: 125px; /* Adjust the width to your preference */
     height: 50px; /* Make the height the same as the width for a square button */
     background-color: black;
@@ -119,4 +119,23 @@ h1, .contact-form{
   label {
     margin: 10px;
     font-size: medium;
+  }
+
+  @media (max-width: 768px),(max-height: 800px) {
+    .square-button, button {
+        width: 125px; /* Adjust the width to your preference */
+        height: 50px; /* Make the height the same as the width for a square button */
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 10px; /* Adjust the border-radius for smooth edges */
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease; /* Add a smooth transition for the box shadow */
+        margin-top: 30px;
+        /* Cool box shadow effect */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.3);
+      }
   }
