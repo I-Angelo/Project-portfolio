@@ -55,38 +55,3 @@ function AboutMe() {
 
 export default AboutMe;
 
-// aboutMe.js
-
-/*.     return (
-    <div>
-        <div className='title'>
-            <h1>Projects completed</h1>
-            <h1>and</h1>
-            <h1>in development</h1>
-        </div>
-        <div className="Projects background-fade">
-          <div className="grid-container">
-            {subsectionsData.map((subsection, index) => (
-              <div key={index} className="project-subsection">
-                <h2>{subsection.title}</h2>
-                <a href={subsection.link} target="_blank" rel="noopener noreferrer">
-                  Visit Website
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="button-container">
-        <Link to="/" className="home-link-button">
-          <div className="button-content">
-            <img src={pyramid} alt="Pyramid" className="button-image" />
-            <span>Go Back to Home</span>
-          </div>
-        </Link>
-      </div>
-    </div>
-  );
-}
-
-export default Projects;
-*/

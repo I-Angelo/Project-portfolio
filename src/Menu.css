@@ -249,25 +249,25 @@ a {
     transition: transform 0.5s ease; /* Add a transition for smooth rotation */
   }
 
-  @keyframes waviy {
+  /* @keyframes waviy {
     0%,40%,100% {
       transform: translateY(0)
     }
     20% {
       transform: translateY(-20px)
-    }
-  }
+    } */
+  /* } */
 
-  .waviy li {
+  /* .waviy li {
     font-family: 'Alfa Slab One', cursive;
-    position: relative;
-    display: inline-block;
+    /* position: absolute; */
+    /* display: inline-block;
     color: #fff;
     text-transform: uppercase;
     animation: waviy 1s infinite;
-    animation-delay: calc(.1s * var(--i));
+    animation-delay: calc(.1s * var(--i)); */
     
-  }
+  /* } */ 
 
   .raise:hover,
 .raise:focus {
@@ -295,17 +295,24 @@ a {
 @media (max-width: 768px) {
     /* Styles for smaller screens (e.g., mobile devices) */
     .menu-toggler {
+        /* transform: translate(-500px); */
       width: 30px; /* Reduce the width for the menu-toggler */
       height: 30px; /* Reduce the height for the menu-toggler */
     }
   
     .menu-toggler:checked ~ ul .menu-item {
+        /* transform: translate(-500px); */
       width: 150px; /* Reduce the width of menu items */
       height: 150px; /* Reduce the height of menu items */
       /* Adjust other properties as needed */
     }
+
+    /* .menu-item {
+        transform: translate(-50px)
+    } */
   
     .menu-item a.menu-item-index {
+    /* transform: translate(-50px); */
       width: 125px; /* Reduce the width of menu item circles */
       height: 125px; /* Reduce the height of menu item circles */
       font-size: 16px; /* Reduce the font size for menu item text */
@@ -336,33 +343,39 @@ a {
     }
   
 
-    /* Inside your CSS, adjust the styles for the Tesseract image and the button */
-    .tesseract-image {
+/* 
+    .menu-mobile {
+        transform: translate(0,0);
+    } */
+
+   
+
+    .menu {
+        position: absolute !important;
+        display: flex !important;
+        justify-content: center !important;
+        /* top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0; */
+        margin: auto;
+        width: 100px !important;
+        height: 100px !important;
+        /* transform: translate(0,0); */
+    }
+
+    /* .menu {
         display: flex;
         justify-content: center;
-        align-items: center;
-        height: 100%;
-        
+        width: 100px !important;
+        height: 100px !important;
     }
+     */
 
-    body {
-        position: relative;
-    }
-
-    /* Add this CSS to adjust the button's position */
-    .menu-toggler {
-        position: fixed;
-        width: 100px;
-        height: 100px;
-        z-index: 2;
-        opacity: 0;
-        cursor: pointer;
-        /* Adjust top and left values to position the button */
-        top: 10px;
-        left: 10px;
-    }
 
     /* You can fine-tune the button's position with additional adjustments as needed */
 
     /* Add more styles as needed for other elements */
   }
+
+  /* Menu.css */

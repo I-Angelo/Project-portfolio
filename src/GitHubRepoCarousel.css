@@ -120,9 +120,11 @@ h2 {
 
 @media (max-width: 768px) {
   .mobile-view {
-    width: 87%; /* Make it 5% smaller */
-    margin-left: 30px;;
+    width: 80%; /* Make it 5% smaller */
+    margin-left: 50px;;
 
     /* Additional styles for mobile devices if needed */
   }
 }
+/* / */
+/* //GitHubRepoCarousel.css  */
