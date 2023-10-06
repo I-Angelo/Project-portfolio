@@ -6,11 +6,7 @@ body {
     background: linear-gradient(to right, #526383, #113675);
 }
 
-.menu {
-    /* Your existing styles */
-    /* position: absolute; */
-  }
-  
+
 
 .menu-toggler {
     position: fixed;
@@ -174,7 +170,7 @@ body {
     height: 175px;
     line-height: 40px; /* Space between two sentences in the circle menu item*/
     color: rgba(255, 255, 255, 0.7);
-    background: rgba(21, 35, 41, 0.7);
+    background: rgb(21, 35, 41);
     border-radius: 50%;
     text-align: center;
     text-decoration: none;
@@ -325,5 +321,29 @@ a {
         pointer-events: auto;
     }
   
+
+    /* Inside your CSS, adjust the styles for the Tesseract image and the button */
+    .tesseract-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* Add this CSS to adjust the button's position */
+    .menu-toggler {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+        /* Adjust top and left values to position the button */
+        top: 10px;
+        left: 10px;
+    }
+
+    /* You can fine-tune the button's position with additional adjustments as needed */
+
     /* Add more styles as needed for other elements */
   }
