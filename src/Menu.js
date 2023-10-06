@@ -22,7 +22,7 @@ const Menu = () => {
 
   return (
     <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}>
-    <nav className={`menu ${menuOpen ? 'open' : ''}`}
+    <nav className={`menu ${menuOpen ? 'open' : ''} menu2`}
     
 
     >

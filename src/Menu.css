@@ -7,6 +7,18 @@ body {
     overflow: hidden;
 }
 
+.menu {
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100px !important;
+    height: 100px !important;
+}
+
 
 
 .menu-toggler {
@@ -17,8 +29,8 @@ body {
     right: 0;
     left: 0;
     margin: auto;
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
     z-index: 2;
     opacity: 0;
     cursor: pointer;
@@ -226,7 +238,7 @@ a {
 
 /* Style the Tesseract image */
 .tesseract-image img {
-    max-width: 25%; /* Make the image 80% smaller */
+    max-width: 100%; /* Make the image 80% smaller */
     max-height: 80vh; /* Limit the height to 80% of the viewport height */
     /*background: transparent; /* Set the background to transparent */
 }
