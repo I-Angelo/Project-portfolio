@@ -1,5 +1,9 @@
 /* aboutMe.css */
 
+body {
+    overflow: auto;
+}
+
 .about-me-container {
     display: flex;
     flex-direction: column;
