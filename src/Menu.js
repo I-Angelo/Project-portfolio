@@ -7,6 +7,10 @@ import { motion } from 'framer-motion';
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const exitAnimation = { opacity: 0, transition: { duration: 1, delay: 0 } };
+    // const animation = {opacity: 1};
+  const enterAnimation = { opacity: 1, transition: { duration: 1.5, delay: 2 } };
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -17,8 +21,8 @@ const Menu = () => {
   };
 
   return (
-    
-    <motion.nav className={`menu ${menuOpen ? 'open' : ''}`}
+    <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}>
+    <nav className={`menu ${menuOpen ? 'open' : ''}`}
     
     initial={{opacity: 0, transition: { duration: 0.5, delay: 1 }}}
     animate={{opacity: 1}}
@@ -67,7 +71,8 @@ const Menu = () => {
           </Link>
           </li>
       </ul>
-    </motion.nav>
+    </nav>
+    </motion.div>
   );
 };
 
