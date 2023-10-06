@@ -2,15 +2,23 @@
   
   /* contactMe.css */
 
-  .about-me-container {
+  .contact-me-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 50vh; /* Adjust the desired height as needed */
     /* background-color: #266a9e; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100vh; /* Adjust the desired height as needed */
   }
-  
+  /* .menu {
+    position: fixed;
+  } */
+
   .about-me-content {
     padding: 20px;
     text-align: center;

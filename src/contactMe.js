@@ -14,9 +14,9 @@ function ContactMe() {
     const enterAnimation = { opacity: 1, transition: { duration: 1.5, delay: 2 } };
 
   return (
-    <motion.div className="contact-me-container"
-    initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}
-    >
+    <div className="contact-me-container">
+    <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}>
+        {/* <div className="contact-me-container"> */}
         <div className="contact-me-content">
             <h1>Contact Me</h1>
             <form className="contact-form">
@@ -29,7 +29,7 @@ function ContactMe() {
                 <label htmlFor="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
 
-                <button type="submit" className="square-button">Submit</button>
+                <button type="submit" >Submit</button>
             </form>
         </div>
       <div className="button-container">
@@ -40,7 +40,9 @@ function ContactMe() {
         </div>
       </Link>
     </div>
+    {/* </div> */}
     </motion.div>
+    </div>
   );
 }
 
@@ -48,3 +50,4 @@ export default ContactMe;
 
 // contactMe.js
 
+// className="contact-me-container"

@@ -22,12 +22,9 @@ const Menu = () => {
 
   return (
     <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}>
-    <nav className={`menu ${menuOpen ? 'open' : ''}`}
+    <nav className="menu2 {`menu ${menuOpen ? 'open' : ''}`}"
     
-    initial={{opacity: 0, transition: { duration: 0.5, delay: 1 }}}
-    animate={{opacity: 1}}
-    exit={{ opacity: 0, transition: { duration: 1, delay: 0.5} }}
-    transition={{ duration: 0.8, delay: 0.2 }} // Adjust the delay as needed
+
     >
       <input
         type="checkbox"
@@ -36,8 +33,10 @@ const Menu = () => {
         checked={menuOpen}
         onChange={toggleMenu}
       />
+      <div className="menu">
       <div className={`tesseract-image ${menuOpen ? 'open' : ''}`}>
         <img src={tesseractImage} alt="Tesseract" />
+      </div>
       </div>
       <ul>
         <li className="menu-item ">
