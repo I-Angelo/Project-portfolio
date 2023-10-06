@@ -22,7 +22,7 @@ const Menu = () => {
 
   return (
     <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}>
-    <nav className="menu2 {`menu ${menuOpen ? 'open' : ''}`}"
+    <nav className={`menu ${menuOpen ? 'open' : ''}`}
     
 
     >
@@ -53,7 +53,6 @@ const Menu = () => {
         <li className="menu-item raise">
           <a
             className="menu-item-index raise"
-            href="#"
             onClick={() => openNewWindow('https://www.linkedin.com/in/ivan-angelo/')}>
             LinkedIn
           </a>

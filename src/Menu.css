@@ -4,6 +4,7 @@ body {
     /* overflow: hidden; */
     background: #2c2c78;
     background: linear-gradient(to right, #526383, #113675);
+    overflow: hidden;
 }
 
 
@@ -219,6 +220,7 @@ a {
     justify-content: center;
     align-items: center;
     height: 100%;
+    
     /* position: fixed; */
 }
 
@@ -328,13 +330,18 @@ a {
         justify-content: center;
         align-items: center;
         height: 100%;
+        
+    }
+
+    body {
+        position: relative;
     }
 
     /* Add this CSS to adjust the button's position */
     .menu-toggler {
         position: fixed;
-        width: 30px;
-        height: 30px;
+        width: 100px;
+        height: 100px;
         z-index: 2;
         opacity: 0;
         cursor: pointer;
