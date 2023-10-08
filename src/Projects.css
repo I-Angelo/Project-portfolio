@@ -70,9 +70,10 @@
   
   /* Style for the link */
   .project-subsection a {
-    color: #0073e6; /* Set link color */
+    color: #121490; /* Set link color */
     text-decoration: none;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
   /* Hover effect for the link */
