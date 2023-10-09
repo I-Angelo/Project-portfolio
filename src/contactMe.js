@@ -27,24 +27,25 @@ const handleFormSubmit = async (e) => {
     e.preventDefault();
   
     try {
-      const response = await fetch('/api/submit-form', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData), // formData contains the form data
-      });
-  
-      if (response.status === 201) {
-        // Data submitted successfully
-        // You can add code here to display a success message or redirect the user
-      } else {
-        // Handle other response statuses (e.g., server error)
-        console.error('Error while submitting data');
+        const response = await fetch('https://your-firebase-project.web.app/api/submit-form', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+      
+        if (response.status === 201) {
+          // Data submitted successfully
+          // You can add code here to display a success message or redirect the user
+        } else {
+          // Handle other response statuses (e.g., server error)
+          console.error('Error while submitting data. Status:', response.status);
+        }
+      } catch (error) {
+        console.error('Error while submitting data:', error);
       }
-    } catch (error) {
-      console.error('Error while submitting data:', error);
-    }
+      
   };
   
 
