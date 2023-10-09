@@ -8,7 +8,7 @@ const port = process.env.PORT || 3001;
 app.use(bodyParser.json());
 
 // PostgreSQL connection setup
-const connectionString = 'postgresql://kwivcgao:EL9aYvP9vFZvYzhTsivujY2KcFm4px12@peanut.db.elephantsql.com/kwivcgao'; // Replace with your ElephantSQL connection URL
+const connectionString = 'https://portfolio-ia-7cd8c.web.app/api/submit-form'; // Replace with your ElephantSQL connection URL
 const db = pgp(connectionString);
 
 // Serve static files (e.g., React build) from the 'build' directory
