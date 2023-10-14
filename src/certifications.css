@@ -1,0 +1,133 @@
+/* aboutMe.css */
+
+body {
+    overflow: auto;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    border-radius: 15px;
+  }
+
+  .main-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100vh; /* Adjust the desired height as needed */
+    width: 100%; /* Take up the full width of the viewport */
+    text-align: center; /* Center-align content horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 200px; */
+  }
+
+
+  .about-me-content {
+    padding: 20px;
+    /* padding-top: 350px !important; */
+    /* margin-top: 100px !important;; */
+    text-align: center;
+    max-width: 600px;
+    /* background-color: #266a9e; */
+    text-align: justify;
+    text-align-last: left;
+    white-space: normal; /* Allow text to wrap */
+    border-radius: 15px;
+    background-color: transparent !important;
+    /* background: linear-gradient(to bottom, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 1) 100%); */
+  }
+  
+  .about-me-content2 {
+    padding: 20px;
+    /* padding-top: 350px !important; */
+    margin-top: 40px !important;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 600px;
+    background-color: #266a9e;
+    text-align: justify;
+    text-align-last: left;
+    white-space: normal; /* Allow text to wrap */
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgba(240, 240, 240, 0) 0%, rgba(240, 240, 240, 1) 100%);
+  }
+  
+  .button-container {
+    margin-top: 35px !important;
+    padding-top: -10px;
+    text-align: center;
+    background-color: transparent;
+    margin-bottom: 75px;
+  }
+  
+  /* Style for the button link */
+  .home-link-button {
+    text-decoration: none;
+    color: #2678d6;
+  }
+  
+  /* Style for the button image */
+  .home-link-button img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Picture */
+  .Profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    margin-top: 35px !important;
+    text-align: center;
+    background-color: transparent;
+  }
+
+  /* Mobile-specific styles */
+  @media (max-width: 768px),(max-height: 800px) {
+    .about-me-content {
+      font-size: 16px;
+      padding: 10px; /* Reduce padding for smaller screens */
+      text-align: center; /* Center-align text for smaller screens */
+      /* margin-top: 500px; */
+    }
+
+    .main-container{
+        margin-top: 100px;
+    }
+
+    .about-me-container {
+        margin-top: 200px;
+    }
+  
+    .button-container {
+       margin-top: 20px; /* Adjust spacing between the slide and the button */
+       margin-bottom: 75px;
+    }
+  
+ 
+    .scroll-container::-webkit-scrollbar {
+        width: 12px; /* Adjust the scrollbar width */
+      }
+      
+    .scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+    }
+    
+    .scroll-container::-webkit-scrollbar-thumb {
+    background: #888; /* Thumb color */
+    }
+      
+  }
+
+
+  

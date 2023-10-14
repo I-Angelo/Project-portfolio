@@ -1,7 +1,7 @@
 /* Menu.css */
 
 body {
-    /* overflow: hidden; */
+    overflow: hidden;
     background: #2c2c78;
     background: linear-gradient(to right, #526383, #113675);
     overflow: hidden;
@@ -14,7 +14,7 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-    margin: auto;
+    margin: auto; /* centers tessarect in the center of the pager*/
     width: 100px !important;
     height: 100px !important;
 }
@@ -70,24 +70,56 @@ body {
 }
 
 .menu-toggler:checked ~ ul .menu-item:nth-child(2) {
-    transform: rotate(72deg) translateY(-200px) translateX(0);
+    transform: rotate(60deg) translateY(-200px) translateX(0);
 }
 
 .menu-toggler:checked ~ ul .menu-item:nth-child(3) {
-    transform: rotate(144deg) translateY(-200px) translateX(0);
+    transform: rotate(120deg) translateY(-200px) translateX(0);
 }
 
 .menu-toggler:checked ~ ul .menu-item:nth-child(4) {
-    transform: rotate(216deg) translateY(-200px) translateX(0);
+    transform: rotate(180deg) translateY(-200px) translateX(0);
 }
 
 .menu-toggler:checked ~ ul .menu-item:nth-child(5) {
-    transform: rotate(288deg) translateY(-200px) translateX(0);
+    transform: rotate(240deg) translateY(-200px) translateX(0);
+}
+
+.menu-toggler:checked ~ ul .menu-item:nth-child(6) {
+    transform: rotate(300deg) translateY(-200px) translateX(0);
 }
 
 .menu-toggler:checked ~ ul .menu-item a {
     pointer-events: auto;
 }
+
+/* Rotation of content to become horicontal */
+
+.menu-item:nth-child(2) a {
+    transform: rotate(-60deg) ;
+}
+
+.menu-item:nth-child(3) a {
+    transform: rotate(-120deg) ;
+
+}.menu-item:nth-child(4) a {
+    transform: rotate(-180deg) ;
+}
+
+.menu-item:nth-child(5) a {
+    transform: rotate(-240deg) ;
+}
+
+.menu-item:nth-child(6) a {
+    transform: rotate(-300deg) ;
+}
+
+/* ul .menu-item:nth-child(6) a {
+    opacity: 5;
+} */
+
+
+
 
 .menu-toggler + label {
     width: 40px;
@@ -129,17 +161,13 @@ body {
     top: -10px;
 }
 
-/* @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    10%, 30%, 50%, 70%, 90% { transform: translateY(-30px); }
-    20%, 40%, 60%, 80% { transform: translateY(-15px); }
-  } */
+
 
 .menu-item {
     position: fixed;
-    display: flex; /* Center content horizontally */
+    display: flex; /*Center content horizontally*/
     justify-content: center; /* Center content horizontally */
-    /* align-items: center; */ /* Remove this line to align content horizontally only */
+    /*align-items: center; /* Remove this line to align content horizontally only */
     top: 0;
     bottom: 0;
     left: 0;
@@ -150,20 +178,10 @@ body {
     opacity: 0;
     transition: 0.5s;
     transform-origin: center;
-    transform: rotate(-15deg); /*Adjust the initial rotation angle as needed
-    opacity: 0;
-    transition: 0.5s;
-    /* animation: bounce 2s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+    transform: rotate(-15deg); /*Adjust the initial rotation angle as needed*/
+
 }
 
-
-
-/* Bounce animation at the end */
-/* @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    10%, 30%, 50%, 70%, 90% { transform: translateY(-30px); }
-    20%, 40%, 60%, 80% { transform: translateY(-15px); }
-  } */
 
 .menu-item.open {
     opacity: 1;
@@ -177,7 +195,6 @@ body {
 
 
 .menu-item a.menu-item-index {
-    /* Your existing styles */
     display: block;
     width: 175px; /* Here is determined the size of the circles in the menu items up to 200px everywhere else in the css files*/
     height: 175px;
@@ -190,8 +207,9 @@ body {
     font-size: 20px;
     pointer-events: none;
     transition: 0.2s;
+    /* z-index: 3 !important; */
+    /* filter: saturate(200%); */
     
-    /* transform: none; */
     /* Center the content horizontally */
     display: flex;
     justify-content: center;
@@ -204,10 +222,12 @@ body {
     transform: none;
 }
 
+/* Shadow */
 a {
     position: relative;
     -webkit-box-reflect: below 5px linear-gradient(transparent, rgba(0,0,0,.1));
     font-size: 20px;
+    /* z-index: -1 !important; */
   }
 
 
@@ -232,65 +252,27 @@ a {
     justify-content: center;
     align-items: center;
     height: 100%;
-    
-    /* position: fixed; */
 }
 
 /* Style the Tesseract image */
 .tesseract-image img {
     max-width: 100%; /* Make the image 80% smaller */
     max-height: 80vh; /* Limit the height to 80% of the viewport height */
-    /*background: transparent; /* Set the background to transparent */
 }
 
 .reset-rotation {
-    transform: rotateY(0deg); /* Reset rotation on the Y-axis */
+    transform: rotateY(0deg); /*Reset rotation on the Y-axis*/
     transform-origin: center;
     transition: transform 0.5s ease; /* Add a transition for smooth rotation */
   }
 
-  /* @keyframes waviy {
-    0%,40%,100% {
-      transform: translateY(0)
-    }
-    20% {
-      transform: translateY(-20px)
-    } */
-  /* } */
-
-  /* .waviy li {
-    font-family: 'Alfa Slab One', cursive;
-    /* position: absolute; */
-    /* display: inline-block;
-    color: #fff;
-    text-transform: uppercase;
-    animation: waviy 1s infinite;
-    animation-delay: calc(.1s * var(--i)); */
-    
-  /* } */ 
-
-  .raise:hover,
+  /* .raise:hover,
 .raise:focus {
   box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
   transform: translateY(-0.25em);
   color: #ffa260
-}
-/* $colors: (
-    fill: #a972cb,
-    pulse: #ef6eae, 
-    close: #ff7f82, 
-    raise: #ffa260, 
-    up: #e4cb58, 
-    slide: #8fc866, 
-    offset: #19bc8b
-  ); */
-
-/* @each $button, $color in $colors {
-.#{$li} {
-    --color: #{$color};
-    --hover: #{adjust-hue($color, 45deg)};
-}
 } */
+
 
 @media (max-width: 768px) {
     /* Styles for smaller screens (e.g., mobile devices) */
@@ -304,78 +286,75 @@ a {
         /* transform: translate(-500px); */
       width: 150px; /* Reduce the width of menu items */
       height: 150px; /* Reduce the height of menu items */
-      /* Adjust other properties as needed */
     }
 
-    /* .menu-item {
-        transform: translate(-50px)
-    } */
+  
   
     .menu-item a.menu-item-index {
-    /* transform: translate(-50px); */
       width: 125px; /* Reduce the width of menu item circles */
       height: 125px; /* Reduce the height of menu item circles */
       font-size: 16px; /* Reduce the font size for menu item text */
-      /* Adjust other properties as needed */
     }
     .menu-toggler:checked ~ ul .menu-item:nth-child(1) {
         transform: rotate(0deg) translateY(-140px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item:nth-child(2) {
-        transform: rotate(72deg) translateY(-140px) translateX(0);
+        transform: rotate(60deg) translateY(-140px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item:nth-child(3) {
-        transform: rotate(144deg) translateY(-140px) translateX(0);
+        transform: rotate(120deg) translateY(-140px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item:nth-child(4) {
-        transform: rotate(216deg) translateY(-140px) translateX(0);
+        transform: rotate(180deg) translateY(-140px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item:nth-child(5) {
-        transform: rotate(288deg) translateY(-140px) translateX(0);
+        transform: rotate(240deg) translateY(-140px) translateX(0);
+    }
+    .menu-toggler:checked ~ ul .menu-item:nth-child(6) {
+        transform: rotate(300deg) translateY(-140px) translateX(0);
     }
     
     .menu-toggler:checked ~ ul .menu-item a {
         pointer-events: auto;
     }
-  
 
-/* 
-    .menu-mobile {
-        transform: translate(0,0);
-    } */
+    /* Rotation of content to become horicontal */
 
-   
+    .menu-item:nth-child(2) a {
+        transform: rotate(-60deg) ;
+    }
+
+    .menu-item:nth-child(3) a {
+        transform: rotate(-120deg) ;
+
+    }.menu-item:nth-child(4) a {
+        transform: rotate(-180deg) ;
+    }
+
+    .menu-item:nth-child(5) a {
+        transform: rotate(-240deg) ;
+        /* z-index: 1; */
+    }
+
+    .menu-item:nth-child(6) a {
+        transform: rotate(-300deg) ;
+        /* filter: saturate(200%); */
+    }
 
     .menu {
         position: absolute !important;
         display: flex !important;
         justify-content: center !important;
-        /* top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0; */
         margin: auto;
         width: 100px !important;
         height: 100px !important;
-        /* transform: translate(0,0); */
+        
     }
 
-    /* .menu {
-        display: flex;
-        justify-content: center;
-        width: 100px !important;
-        height: 100px !important;
-    }
-     */
-
-
-    /* You can fine-tune the button's position with additional adjustments as needed */
-
-    /* Add more styles as needed for other elements */
   }
 
   /* Menu.css */

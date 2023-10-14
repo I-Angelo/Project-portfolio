@@ -3,6 +3,7 @@ import sphere2 from './static/sphere2.gif';
 import { Link } from 'react-router-dom';
 import './contactMe.css';
 import { motion } from 'framer-motion';
+import Axios from 'axios'; // Import Axios
 
 function ContactMe() {
   const exitAnimation = { opacity: 0, transition: { duration: 1, delay: 0 } };
@@ -22,32 +23,29 @@ function ContactMe() {
     });
   };
 
-  // Handle form submission
-const handleFormSubmit = async (e) => {
+  // Handle form submission using Axios
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-  
+
     try {
-        const response = await fetch('https://your-firebase-project.web.app/api/submit-form', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
-        });
-      
-        if (response.status === 201) {
-          // Data submitted successfully
-          // You can add code here to display a success message or redirect the user
-        } else {
-          // Handle other response statuses (e.g., server error)
-          console.error('Error while submitting data. Status:', response.status);
-        }
-      } catch (error) {
-        console.error('Error while submitting data:', error);
+      const response = await Axios.post('/submit-form', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (response.status === 201) {
+        // Data submitted successfully
+        console.log('Data submitted successfully');
+        // You can add code here to display a success message or redirect the user
+      } else {
+        // Handle other response statuses (e.g., server error)
+        console.error('Error while submitting data. Status:', response.status);
       }
-      
+    } catch (error) {
+      console.error('Error while submitting data:', error);
+    }
   };
-  
 
   return (
     <div className="contact-me-container">
@@ -103,7 +101,5 @@ const handleFormSubmit = async (e) => {
 }
 
 export default ContactMe;
-
-// contactMe.js
 
 // className="contact-me-container"

@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-route
 import Menu from './Menu';
 import GitHubRepoCarousel from './GitHubRepoCarousel';
 import AboutMe from './aboutMe';
-import ContactMe from './contactMe'
+import ContactMe from './contactMe';
 import Projects from './Projects';
+import Certifications from './certifications';
 
 import { AnimatePresence } from 'framer-motion'; //. if a bug is present try this instead "framer-motion/dist/framer-motion"
 
@@ -31,6 +32,9 @@ function AnimatedRoutes() {
 
           {/* Route for About Me */}
           <Route path="/projects" element={<Projects />} />
+
+          {/* Route for About Me */}
+          <Route path="/certifications" element={<Certifications />} />
 
           {/* Add more routes as needed */}
       </Routes>

@@ -41,31 +41,37 @@ const Menu = () => {
       </div>
       <ul>
         <li className="menu-item ">
-          <Link className="menu-item-index unique" to="/about">
+          <Link className="menu-item-index " to="/about">
           About Me
           </Link>
         </li>
         <li className="menu-item">
           {/* Use Link component to navigate to /github-carousel route */}
-          <Link className="menu-item-index waviy" to="/github-carousel/I-Angelo">
+          <Link className="menu-item-index" to="/github-carousel/I-Angelo">
             GitHub Carousel
           </Link>
         </li>
-        <li className="menu-item raise">
+        <li className="menu-item ">
           <a
-            className="menu-item-index raise"
+            className="menu-item-index "
             onClick={() => openNewWindow('https://www.linkedin.com/in/ivan-angelo/')}>
             LinkedIn
           </a>
         </li>
         <li className="menu-item">
           {/* Use Link component to navigate to /github-carousel route */}
-          <Link className="menu-item-index waviy" to="/projects">
+          <Link className="menu-item-index " to="/certifications">
+            Certifications
+          </Link>
+        </li>
+        <li className="menu-item">
+          {/* Use Link component to navigate to /github-carousel route */}
+          <Link className="menu-item-index " to="/projects">
             Projects
           </Link>
         </li>
         <li className="menu-item ">
-          <Link className="menu-item-index unique" to="/contact">
+          <Link className="menu-item-index " to="/contact">
           Contact Me
           </Link>
           </li>
