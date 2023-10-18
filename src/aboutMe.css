@@ -25,14 +25,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 200px; */
+    margin-top: 500px !important;
   }
 
 
   .about-me-content {
     padding: 20px;
     /* padding-top: 350px !important; */
-    margin-top: 375px !important;;
+    margin-top: 375px !important;
     text-align: center;
     max-width: 600px;
     /* background-color: #266a9e; */
@@ -47,7 +47,7 @@ body {
   .about-me-content2 {
     padding: 20px;
     /* padding-top: 350px !important; */
-    margin-top: 40px !important;
+    margin-top: 0px !important;
     margin-bottom: 10px;
     text-align: center;
     max-width: 600px;

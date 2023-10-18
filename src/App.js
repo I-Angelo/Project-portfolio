@@ -16,36 +16,7 @@ function App() {
       <div className="App">
         {/* Wrap your routes in the ErrorBoundary component */}
         <ErrorBoundary>
-
-
-
           <AnimatedRoutes />
-
-
-
-
-
-
-          {/*  */}
-          {/* Define your routes inside the Routes component */}
-          {/* <Routes> */}
-            {/* Define the default route (home) */}
-            {/* <Route path="/" element={<Menu />} /> */}
-
-            {/* Route for the GitHubRepoCarousel component with a dynamic parameter */}
-            {/* <Route path="/github-carousel/:repoOwner" element={<GitHubRepoCarousel />} /> */}
-            
-            {/* Route for About Me */}
-            {/* <Route path="/about" element={<AboutMe />} /> */}
-
-            {/* Route for About Me */}
-            {/* <Route path="/contact" element={<ContactMe />} /> */}
-
-            {/* Route for About Me */}
-            {/* <Route path="/projects" element={<Projects />} /> */}
-         
-            {/* Add more routes as needed */}
-          {/* </Routes> */}
         </ErrorBoundary>
       </div>
     </Router>

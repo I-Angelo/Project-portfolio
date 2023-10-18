@@ -2,7 +2,7 @@ import React from 'react';
 import cert from './static/aws-certified-cloud-practitioner.png';
 // import profile from './static/PROFILE_PIC.jpg'
 import { Link } from 'react-router-dom';
-import './aboutMe.css';
+import './certifications.css';
 // import './GitHubRepoCarousel.css'
 import { motion } from 'framer-motion';
 import threads from './static/Lissajous-5-2-Knot-Animated-unscreen.gif';
