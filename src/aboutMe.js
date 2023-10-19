@@ -13,7 +13,7 @@ function AboutMe() {
     const enterAnimation = { opacity: 1, transition: { duration: 1, delay: 0.5 } };
 
     return (
-        <div className="main-container">
+        <div className="about-container">
     <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}>
     <div class="scroll-container">
     <div className="about-me-container">

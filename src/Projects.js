@@ -19,7 +19,7 @@ function Projects() {
     const enterAnimation = { opacity: 1, transition: { duration: 1.5, delay: 2 } };
 
     return (
-        <div className="main-container">
+        <div className="projects-container">
         <motion.div initial={exitAnimation} animate={enterAnimation} exit={exitAnimation}
         >
             <div className='title'>
